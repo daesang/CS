@@ -1,0 +1,261 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>DevExpress.GridDemo</RootNamespace>
+    <AssemblyName>GridDemoApp</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Mobile.Grid" Version="18.1.3" />
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.561731" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Andrew_Fuller.jpg" />
+    <None Remove="Images\Anne_Dodsworth.jpg" />
+    <None Remove="Images\Janet_Leverling.jpg" />
+    <None Remove="Images\Laura_Callahan.jpg" />
+    <None Remove="Images\Margaret_Peacock.jpg" />
+    <None Remove="Images\Michael_Suyama.jpg" />
+    <None Remove="Images\Nancy_Davolio.jpg" />
+    <None Remove="Images\Robert_King.jpg" />
+    <None Remove="Images\Steven_Buchanan.jpg" />
+    <None Remove="Descriptions\CellTemplatePage.html" />
+    <None Remove="Descriptions\ColumnChooserPage.html" />
+    <None Remove="Descriptions\ColumnsAutoGeneratePage.html" />
+    <None Remove="Descriptions\ConditionalFormattingPage.html" />
+    <None Remove="Descriptions\CustomizeCellPage.html" />
+    <None Remove="Descriptions\ExportPage.html" />
+    <None Remove="Descriptions\FilterAutoFilterPage.html" />
+    <None Remove="Descriptions\FilterPage.html" />
+    <None Remove="Descriptions\FirstLookPage.html" />
+    <None Remove="Descriptions\GroupDatesPage.html" />
+    <None Remove="Descriptions\GroupPage.html" />
+    <None Remove="Descriptions\HorizontalScrollingPage.html" />
+    <None Remove="Descriptions\LargeDataSourcePage.html" />
+    <None Remove="Descriptions\LoadMorePage.html" />
+    <None Remove="Descriptions\LocalizationPage.html" />
+    <None Remove="Descriptions\MenuCustomizationPage.html" />
+    <None Remove="Descriptions\NewItemRowPage.html" />
+    <None Remove="Descriptions\PullToRefreshPage.html" />
+    <None Remove="Descriptions\RealtimeDataPage.html" />
+    <None Remove="Descriptions\RestrictionsPage.html" />
+    <None Remove="Descriptions\RowDetailsPage.html" />
+    <None Remove="Descriptions\RowEditModePage.html" />
+    <None Remove="Descriptions\SaveLoadStatePage.html" />
+    <None Remove="Descriptions\SearchHighlightCellPage.html" />
+    <None Remove="Descriptions\SortMultiColumnPage.html" />
+    <None Remove="Descriptions\SortPage.html" />
+    <None Remove="Descriptions\SummaryCustomPage.html" />
+    <None Remove="Descriptions\SummaryGroupPage.html" />
+    <None Remove="Descriptions\SummaryTotalPage.html" />
+    <None Remove="Descriptions\SwipeButtonsPage.html" />
+    <None Remove="Descriptions\ThemesPage.html" />
+    <None Remove="Descriptions\UnboundColumnsPage.html" />
+    <None Remove="Sources\CellTemplatePage.xaml.code.htm" />
+    <None Remove="Sources\CellTemplatePage.xaml.htm" />
+    <None Remove="Sources\ColumnChooserPage.xaml.code.htm" />
+    <None Remove="Sources\ColumnChooserPage.xaml.htm" />
+    <None Remove="Sources\ColumnsAutoGeneratePage.xaml.code.htm" />
+    <None Remove="Sources\ColumnsAutoGeneratePage.xaml.htm" />
+    <None Remove="Sources\ConditionalFormattingPage.xaml.code.htm" />
+    <None Remove="Sources\ConditionalFormattingPage.xaml.htm" />
+    <None Remove="Sources\CustomizeCellPage.xaml.code.htm" />
+    <None Remove="Sources\CustomizeCellPage.xaml.htm" />
+    <None Remove="Sources\ExportPage.xaml.code.htm" />
+    <None Remove="Sources\ExportPage.xaml.htm" />
+    <None Remove="Sources\FilterAutoFilterPage.xaml.code.htm" />
+    <None Remove="Sources\FilterAutoFilterPage.xaml.htm" />
+    <None Remove="Sources\FilterPage.xaml.code.htm" />
+    <None Remove="Sources\FilterPage.xaml.htm" />
+    <None Remove="Sources\FirstLookPage.xaml.code.htm" />
+    <None Remove="Sources\FirstLookPage.xaml.htm" />
+    <None Remove="Sources\GroupDatesPage.xaml.code.htm" />
+    <None Remove="Sources\GroupDatesPage.xaml.htm" />
+    <None Remove="Sources\GroupPage.xaml.code.htm" />
+    <None Remove="Sources\GroupPage.xaml.htm" />
+    <None Remove="Sources\HorizontalScrollingPage.xaml.code.htm" />
+    <None Remove="Sources\HorizontalScrollingPage.xaml.htm" />
+    <None Remove="Sources\LargeDataSourcePage.xaml.code.htm" />
+    <None Remove="Sources\LargeDataSourcePage.xaml.htm" />
+    <None Remove="Sources\LoadMorePage.xaml.code.htm" />
+    <None Remove="Sources\LoadMorePage.xaml.htm" />
+    <None Remove="Sources\LocalizationPage.xaml.code.htm" />
+    <None Remove="Sources\LocalizationPage.xaml.htm" />
+    <None Remove="Sources\MenuCustomizationPage.xaml.code.htm" />
+    <None Remove="Sources\MenuCustomizationPage.xaml.htm" />
+    <None Remove="Sources\NewItemRowPage.xaml.code.htm" />
+    <None Remove="Sources\NewItemRowPage.xaml.htm" />
+    <None Remove="Sources\PullToRefreshPage.xaml.code.htm" />
+    <None Remove="Sources\PullToRefreshPage.xaml.htm" />
+    <None Remove="Sources\RealtimeDataPage.xaml.code.htm" />
+    <None Remove="Sources\RealtimeDataPage.xaml.htm" />
+    <None Remove="Sources\RestrictionsPage.xaml.code.htm" />
+    <None Remove="Sources\RestrictionsPage.xaml.htm" />
+    <None Remove="Sources\RowDetailsPage.xaml.code.htm" />
+    <None Remove="Sources\RowDetailsPage.xaml.htm" />
+    <None Remove="Sources\RowEditModePage.xaml.code.htm" />
+    <None Remove="Sources\RowEditModePage.xaml.htm" />
+    <None Remove="Sources\SaveLoadStatePage.xaml.code.htm" />
+    <None Remove="Sources\SaveLoadStatePage.xaml.htm" />
+    <None Remove="Sources\SearchHighlightCellPage.xaml.code.htm" />
+    <None Remove="Sources\SearchHighlightCellPage.xaml.htm" />
+    <None Remove="Sources\SortMultiColumnPage.xaml.code.htm" />
+    <None Remove="Sources\SortMultiColumnPage.xaml.htm" />
+    <None Remove="Sources\SortPage.xaml.code.htm" />
+    <None Remove="Sources\SortPage.xaml.htm" />
+    <None Remove="Sources\SummaryCustomPage.xaml.code.htm" />
+    <None Remove="Sources\SummaryCustomPage.xaml.htm" />
+    <None Remove="Sources\SummaryGroupPage.xaml.code.htm" />
+    <None Remove="Sources\SummaryGroupPage.xaml.htm" />
+    <None Remove="Sources\SummaryTotalPage.xaml.code.htm" />
+    <None Remove="Sources\SummaryTotalPage.xaml.htm" />
+    <None Remove="Sources\SwipeButtonsPage.xaml.code.htm" />
+    <None Remove="Sources\SwipeButtonsPage.xaml.htm" />
+    <None Remove="Sources\ThemesPage.xaml.code.htm" />
+    <None Remove="Sources\ThemesPage.xaml.htm" />
+    <None Remove="Sources\UnboundColumnsPage.xaml.code.htm" />
+    <None Remove="Sources\UnboundColumnsPage.xaml.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Andrew_Fuller.jpg">
+      <LogicalName>AndrewFuller</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Anne_Dodsworth.jpg">
+      <LogicalName>AnneDodsworth</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Janet_Leverling.jpg">
+      <LogicalName>JanetLeverling</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Laura_Callahan.jpg">
+      <LogicalName>LauraCallahan</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Margaret_Peacock.jpg">
+      <LogicalName>MargaretPeacock</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Michael_Suyama.jpg">
+      <LogicalName>MichaelSuyama</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Nancy_Davolio.jpg">
+      <LogicalName>NancyDavolio</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Robert_King.jpg">
+      <LogicalName>RobertKing</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Steven_Buchanan.jpg">
+      <LogicalName>StevenBuchanan</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Descriptions\CellTemplatePage.html" />
+    <EmbeddedResource Include="Descriptions\ColumnChooserPage.html" />
+    <EmbeddedResource Include="Descriptions\ColumnsAutoGeneratePage.html" />
+    <EmbeddedResource Include="Descriptions\ConditionalFormattingPage.html" />
+    <EmbeddedResource Include="Descriptions\CustomizeCellPage.html" />
+    <EmbeddedResource Include="Descriptions\ExportPage.html" />
+    <EmbeddedResource Include="Descriptions\FilterAutoFilterPage.html" />
+    <EmbeddedResource Include="Descriptions\FilterPage.html" />
+    <EmbeddedResource Include="Descriptions\FirstLookPage.html" />
+    <EmbeddedResource Include="Descriptions\GroupDatesPage.html" />
+    <EmbeddedResource Include="Descriptions\GroupPage.html" />
+    <EmbeddedResource Include="Descriptions\HorizontalScrollingPage.html" />
+    <EmbeddedResource Include="Descriptions\LargeDataSourcePage.html" />
+    <EmbeddedResource Include="Descriptions\LoadMorePage.html" />
+    <EmbeddedResource Include="Descriptions\LocalizationPage.html" />
+    <EmbeddedResource Include="Descriptions\MenuCustomizationPage.html" />
+    <EmbeddedResource Include="Descriptions\NewItemRowPage.html" />
+    <EmbeddedResource Include="Descriptions\PullToRefreshPage.html" />
+    <EmbeddedResource Include="Descriptions\RealtimeDataPage.html" />
+    <EmbeddedResource Include="Descriptions\RestrictionsPage.html" />
+    <EmbeddedResource Include="Descriptions\RowDetailsPage.html" />
+    <EmbeddedResource Include="Descriptions\RowEditModePage.html" />
+    <EmbeddedResource Include="Descriptions\SaveLoadStatePage.html" />
+    <EmbeddedResource Include="Descriptions\SearchHighlightCellPage.html" />
+    <EmbeddedResource Include="Descriptions\SortMultiColumnPage.html" />
+    <EmbeddedResource Include="Descriptions\SortPage.html" />
+    <EmbeddedResource Include="Descriptions\SummaryCustomPage.html" />
+    <EmbeddedResource Include="Descriptions\SummaryGroupPage.html" />
+    <EmbeddedResource Include="Descriptions\SummaryTotalPage.html" />
+    <EmbeddedResource Include="Descriptions\SwipeButtonsPage.html" />
+    <EmbeddedResource Include="Descriptions\ThemesPage.html" />
+    <EmbeddedResource Include="Descriptions\UnboundColumnsPage.html" />
+    <EmbeddedResource Include="Sources\CellTemplatePage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\CellTemplatePage.xaml.htm" />
+    <EmbeddedResource Include="Sources\ColumnChooserPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\ColumnChooserPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\ColumnsAutoGeneratePage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\ColumnsAutoGeneratePage.xaml.htm" />
+    <EmbeddedResource Include="Sources\ConditionalFormattingPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\ConditionalFormattingPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\CustomizeCellPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\CustomizeCellPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\ExportPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\ExportPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\FilterAutoFilterPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\FilterAutoFilterPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\FilterPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\FilterPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\FirstLookPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\FirstLookPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\GroupDatesPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\GroupDatesPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\GroupPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\GroupPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\HorizontalScrollingPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\HorizontalScrollingPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\LargeDataSourcePage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\LargeDataSourcePage.xaml.htm" />
+    <EmbeddedResource Include="Sources\LoadMorePage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\LoadMorePage.xaml.htm" />
+    <EmbeddedResource Include="Sources\LocalizationPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\LocalizationPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\MenuCustomizationPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\MenuCustomizationPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\NewItemRowPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\NewItemRowPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\PullToRefreshPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\PullToRefreshPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\RealtimeDataPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\RealtimeDataPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\RestrictionsPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\RestrictionsPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\RowDetailsPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\RowDetailsPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\RowEditModePage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\RowEditModePage.xaml.htm" />
+    <EmbeddedResource Include="Sources\SaveLoadStatePage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\SaveLoadStatePage.xaml.htm" />
+    <EmbeddedResource Include="Sources\SearchHighlightCellPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\SearchHighlightCellPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\SortMultiColumnPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\SortMultiColumnPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\SortPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\SortPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\SummaryCustomPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\SummaryCustomPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\SummaryGroupPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\SummaryGroupPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\SummaryTotalPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\SummaryTotalPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\SwipeButtonsPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\SwipeButtonsPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\ThemesPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\ThemesPage.xaml.htm" />
+    <EmbeddedResource Include="Sources\UnboundColumnsPage.xaml.code.htm" />
+    <EmbeddedResource Include="Sources\UnboundColumnsPage.xaml.htm" />
+  </ItemGroup>
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+</Project>
